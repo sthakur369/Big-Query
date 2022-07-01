@@ -1,0 +1,3 @@
+SELECT distinct EXTRACT (Year FROM creation_date) this_date, COUNT(*) id_count
+FROM `bigquery-public-data.stackoverflow.users`
+GROUP BY EXTRACT (Year FROM creation_date)
